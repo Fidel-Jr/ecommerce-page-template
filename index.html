@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <header>
+            <div class="site-navbar-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                            <form action="" class="site-top-search">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon icon-search2">
+                                        <i class="fa-solid fa-magnifying-glass text-muted"></i>
+                                    </span>
+                                    <input type="text" class="form-control border-0" placeholder="Search">
+                                </div>
+                               
+                            </form>
+                        </div>
+                        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                            <div class="site-logo">
+                                <a href="" class="">Daise</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 order-3 order-md-3 text-end">
+                            <div class="site-top-icons">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span>
+                                                <i class="fa-solid fa-user"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="cart-badge" aria-hidden="true">3</span>
+                                        </a>
+                                    </li>
+                                    <li class="d-inline-block d-md-none ml-md-0 mr-3" style="padding-left: 1rem;">
+                                        <a href="" type="button" class="site-menu-toggle js-menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <span>
+                                                <i class="fa-solid fa-bars"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="site-navigation text-right text-md-center border-top d-none d-md-block" role="navigation">
+                <div class="container">
+                    <ul class="site-menu js-clone-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Catalogue</a></li>
+                        <li><a href="contact.html">New Arrivals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <button class="btn btn-primary" type="button" >Toggle right offcanvas</button> -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">
+                        <div class="site-logo m-3">
+                            <a href="" class="">Daise</a>
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="container">
+                        <ul class="site-menu js-clone-nav ">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="blog.html">Catalogue</a></li>
+                            <li><a href="contact.html">New Arrivals</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="site-hero-section-bg aos-init aos-animate" data-aos="fade">
+            <div class="container">
+                <div class="row align-items-start align-items-md-center justify-content-end">
+                    <div class="col-12 col-md-5 order-1 order-md-2 hero-content text-center text-md-start pt-5 pt-md-0">
+                        <h1 class="mb-3">Finding Your<br>Ideal Pair</h1>
+                        <p class="lead">Explore a collection of shoes made to fit your style, support your steps, and keep you comfortable all day.</p>
+                        <a href="#" class="btn hero-btn btn-lg shadow">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-product-collection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-collection">
+                            <img src="images/sports-collection-img.png" alt="">
+
+                            <div class="collection-overlay">
+                                <h3>Sports Collection</h3>
+                                <span style="color: #b4e24c; font-weight: 500;">Shop Now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-collection">
+                            <img src="images/latest-collection-img.png" alt="">
+                            <div class="collection-overlay">
+                                <h3>Latest Collection</h3>
+                                <span style="color: #b4e24c; font-weight: 500;">Shop Now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-collection">
+                            <img src="images/school-collection-img.png" alt="">
+                            <div class="collection-overlay">
+                                <h3>School Collection</h3>
+                                <span style="color: #b4e24c; font-weight: 500;">Shop Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-features-products">
+            <div class="container pt--0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="site-title text-center">
+                            <h3 class="title">Featured Items</h3>
+                        </div>
+                        <div class="desc">
+                            <p class="text-center">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-1.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <span class="price-old">$100</span>
+                                        <span class="sep">/</span>
+                                        <span class="price-new">$90</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-2.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <!-- <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul> -->
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <!-- <span class="price-old">$100</span>
+                                        <span class="sep">/</span> -->
+                                        <span class="price-new">$120</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-3.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <ul>
+                                        <li class="discount">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <span class="price-old">$110</span>
+                                        <span class="sep">/</span>
+                                        <span class="price-new">$80</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-4.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <!-- <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul> -->
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <!-- <span class="price-old">$100</span>
+                                        <span class="sep">/</span> -->
+                                        <span class="price-new">$40</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-2.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <!-- <span class="price-old">$100</span>
+                                        <span class="sep">/</span> -->
+                                        <span class="price-new">$120</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-4.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <!-- <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul> -->
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <!-- <span class="price-old">$100</span>
+                                        <span class="sep">/</span> -->
+                                        <span class="price-new">$40</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-1.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <ul>
+                                        <li class="discount">
+                                            -10%
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <span class="price-old">$100</span>
+                                        <span class="sep">/</span>
+                                        <span class="price-new">$90</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="inner-content">
+                                <div class="product-thumbnail border">
+                                    <a href="">
+                                        <img src="images/product-3.png" alt="">
+                                    </a>
+                                     <div class="product-flag">
+                                    <ul>
+                                        <li class="discount">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product-wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-product-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                        <button type="button" class="btn-product-quick-view-open">
+                                            <i class="fa fa-arrows"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="product-info">
+                                    <div class="category">
+                                        <ul>
+                                            <li>
+                                                <a href="">Men</a>
+                                            </li>
+                                            <li class="sep">
+                                                /
+                                            </li>
+                                            <li>
+                                                <a href="">Women</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="">Running Shoes</a>
+                                    </h4>
+                                    <div class="prices">
+                                        <span class="price-old">$110</span>
+                                        <span class="sep">/</span>
+                                        <span class="price-new">$80</span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-sale z-index-1">
+            <div class="container pt-0 pb-0">
+                <div class="row">
+                    <div class="col-lg-6" >
+                        <div class="divider-content mt-5">
+                            <h4 class="sub-title">Sale up to 50%</h4>
+                            <h2 class="title">All Offers Are Here</h2>
+                            <p class="desc">Offer Available All Shoes & Products</p>
+                            <a class="shop-now-btn" href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="widget-item">
+                                <div class="about-widget-wrap">
+                                    <div class="widget-logo">
+                                        <div class="site-logo">
+                                            <a href="" class="">Daise</a>
+                                        </div>
+                                    </div>
+                                    <p class="desc">Lorem ipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore</p>
+                                    <div class="social-icons">
+                                        <a href="">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-dribbble"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="widget-item widget-services-item">
+                                <h4 class="widget-title">Services</h4>
+                                <h4 class="widget-collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#widgetId-1" aria-expanded="false">Services</h4>
+                                <div id="widgetId-1" class="widget-collapse-body collapse" style="">
+                                    <div class="collapse-body">
+                                        <div class="widget-menu-wrap">
+                                            <ul class="nav-menu">
+                                            <li><a href="contact.html">Home monitoring</a></li>
+                                            <li><a href="contact.html">Air Filters</a></li>
+                                            <li><a href="contact.html">Professional installation</a></li>
+                                            <li><a href="contact.html">Smart Buildings</a></li>
+                                            <li><a href="contact.html">For contractors</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <!--== Start widget Item ==-->
+                            <div class="widget-item widget-account-item">
+                            <h4 class="widget-title">My Account</h4>
+                            <h4 class="widget-collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#widgetId-2">My Account</h4>
+                            <div id="widgetId-2" class="collapse widget-collapse-body">
+                                <div class="collapse-body">
+                                <div class="widget-menu-wrap">
+                                    <ul class="nav-menu">
+                                    <li><a href="account-login.html">My Account</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="shop-cart.html">Shopping cart</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="account-login.html">Services Login</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--== End widget Item ==-->
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <!--== Start widget Item ==-->
+                            <div class="widget-item">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <h4 class="widget-collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#widgetId-3">Contact Info</h4>
+                            <div id="widgetId-3" class="collapse widget-collapse-body">
+                                <div class="collapse-body">
+                                <div class="widget-contact-wrap">
+                                    <ul>
+                                    <li><span>Address:</span> Your address goes here.</li>
+                                    <li><span>Phone//fax:</span> <a href="tel://0123456789">0123456789</a></li>
+                                    <li><span>Email:</span> <a href="mailto://demo@example.com">demo@example.com</a></li>
+                                    <li><a target="_blank" href="https://www.hasthemes.com">www.example.com</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--== End widget Item ==-->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <div class="container pt--0 pb--0">
+                    <div class="row">
+                    <div class="col-md-7 col-lg-6">
+                        <p class="copyright">© 2025 Colinares. Inspired by <a target="_blank" href="https://template.hasthemes.com/shome/shome/index.html">Codecarnival </a> & <a target="_blank" href="https://preview.colorlib.com/theme/shoppers/"> Colorlib.</a></p>
+                    </div>
+                    <div class="col-md-5 col-lg-6">
+                        <div class="payment">
+                        <a href="account-login.html"><img src="images/payment-card.png" width="100" height="21" alt="Payment Logo"></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
